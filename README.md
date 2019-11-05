@@ -17,5 +17,8 @@ This will test the domain name specified after the -hostname argument
 
 ### Example 3
 $dns_servers_to_use = @("myDnsServer1.com","myDnsServer2.com")
+
 .\ps_Util_TestDomainNameServers.ps1 -hostname "domain-name" -dns_servers $dns_servers_to_use
+
+This will do a dns lookup for the specified hostname against the list of DNS servers specified in the string variable $dns_servers_to_use
 
